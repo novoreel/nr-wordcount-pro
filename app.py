@@ -7,7 +7,7 @@ def index():
 
 
 @app.route('/<name>')
-def name():
+def name(name):
 	return "Hello {}!".format(name)
 
 
