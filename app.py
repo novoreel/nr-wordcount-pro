@@ -5,5 +5,11 @@ app = Flask(__name__)
 def index():
 	return '<h1>Hello from flask</h1>';
 
+
+@app.route('/<name>')
+def name():
+	return "Hello {}!".format(name)
+
+
 if __name__ == '__main__':
 	app.run(debug=True)
